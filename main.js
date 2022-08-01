@@ -3,11 +3,10 @@ const billInput = document.querySelector(".bill-input");
 const cashInput = document.querySelector(".cash-input");
 const button = document.querySelector(".button");
 const message = document.querySelector(".message");
-const notes = document.querySelectorAll(".no-of-notes")
-
+const notes = document.querySelectorAll(".no-of-notes");
 
 const arrayOfNotes = [2000, 500, 200, 100, 50, 10, 5, 2, 1];
-const arrayOfNotesReturned = [];
+// const arrayOfNotesReturned = [];
 
 const showMessage = function (msg) {
   message.textContent = msg;
@@ -16,17 +15,17 @@ const showMessage = function (msg) {
 const hideMessage = function () {
   message.textContent = "";
 };
-hideMessage()
+hideMessage();
 
 const calculateChange = function (change) {
   for (let i = 0; i < arrayOfNotes.length; i++) {
     const notesToBeReturned = Math.trunc(change / arrayOfNotes[i]);
-    arrayOfNotesReturned.push(notesToBeReturned);
-    notes[i].innerText= notesToBeReturned
+    // arrayOfNotesReturned.push(notesToBeReturned);
+    // arrayOfNotesReturned[i].innerHTML = notesToBeReturned
+    notes[i].innerText = notesToBeReturned;
     change = change - arrayOfNotes[i] * notesToBeReturned;
   }
-  console.log(arrayOfNotesReturned);
-
+ 
 };
 
 button.addEventListener("click", function displayResults() {
