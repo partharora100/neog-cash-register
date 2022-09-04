@@ -25,10 +25,10 @@ const calculateChange = function (change) {
     notes[i].innerText = notesToBeReturned;
     change = change - arrayOfNotes[i] * notesToBeReturned;
   }
- 
 };
 
 button.addEventListener("click", function displayResults() {
+  showMessage("");
   const bill = Number(billInput.value);
   const cash = Number(cashInput.value);
   let change = cash - bill;
