@@ -82,3 +82,37 @@ table caption {
   display: flex;
   justify-content: center;
 }
+
+.footer {
+  margin-top: 200px;
+  background-color: lightseagreen;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 20px;
+  text-align: center;
+  padding: 12px;
+  color: white;
+}
+
+.socials-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.socials p {
+  margin-bottom: 20px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}

@@ -20,8 +20,7 @@ hideMessage();
 const calculateChange = function (change) {
   for (let i = 0; i < arrayOfNotes.length; i++) {
     const notesToBeReturned = Math.trunc(change / arrayOfNotes[i]);
-    // arrayOfNotesReturned.push(notesToBeReturned);
-    // arrayOfNotesReturned[i].innerHTML = notesToBeReturned
+
     notes[i].innerText = notesToBeReturned;
     change = change - arrayOfNotes[i] * notesToBeReturned;
   }
@@ -36,6 +35,7 @@ button.addEventListener("click", function displayResults() {
   if (bill > 0 && cash > 0) {
     if (bill > cash) {
       showMessage(`"Do you want to wash some plates😂"`);
+      calculateChange(0);
     } else if (cash > bill) {
       calculateChange(change);
     }
