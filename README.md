@@ -1,5 +1,8 @@
 # neog-cash-register
 
+![image](https://user-images.githubusercontent.com/105020410/190888717-dc4184e0-0546-4f82-b94e-556b2f6ba063.png)
+
+
 This app helps the user to caluclate the amount to be returned in the denominations available.
 
 ## How to use
